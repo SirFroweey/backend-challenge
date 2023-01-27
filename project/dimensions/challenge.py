@@ -1,10 +1,6 @@
 from pprint import pprint
 from .models import Company, Dimension
 
-from django.db import connection
-from django.db.models import Q
-from functools import reduce
-
 def list_children(dimension_id):
     """Lists the nested tree for a given Dimension.
     """
